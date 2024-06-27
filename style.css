@@ -1,0 +1,176 @@
+/* general */
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'League Spartan', sans-serif;      
+    font-size: 12px;
+    overflow-x: hidden; 
+}
+
+/* nav */
+nav {
+    width: 100%;
+    position: absolute;
+    padding: 40px;
+    background-color: transparent;
+    transition: background-color 300ms;  
+    display: flex;
+}
+
+nav ul{
+    margin: 0 10px;
+    padding-left: 17px;
+    display: flex;
+    color: white;    
+    font-weight: 500; 
+}
+
+nav ul li{
+    padding-left: 25px;
+    list-style: none;
+}
+
+nav ul li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#logo{
+    margin-left: 15px;
+}
+
+/* partie static */
+#below{
+    display: flex;
+}
+
+#firstimage, #secondimage{
+    background-size: cover;
+    width: 81.5%;
+    height: max(300px, 20vh);
+
+} 
+
+#content{
+    padding: 50px 30px;
+    width: 100%;
+}
+
+#below #content h2{
+    letter-spacing: 7px;
+    text-transform: uppercase;
+    line-height: 1.3;
+    font-weight: 700;
+    padding-left: 30px;
+    font-style: bold;
+}
+
+#below #content p {
+    font-weight: 400;
+    color: hsl(0, 0%, 63%);
+    line-height: 1.3;
+    font-weight: 500;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: max(1vw, 5pt);
+}
+
+/* partie qui bouge */
+
+.above{
+    display: flex;
+    min-height: 80vh;
+    width: 100%; 
+}
+
+.above .arrows{
+    width: 100%;
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 1;
+    transition: opacity 600ms;
+}
+
+.above .parts {
+    width: 40%;
+    padding: 6% 8%;
+    opacity: 1;
+    transition: opacity 600ms;
+}
+
+.above .parts h1 {
+    font-size: 35px;
+    padding-right: 40px;
+    margin-bottom: 15px;
+    margin-top: 75px;
+    line-height: 1.1;
+}
+
+.above .parts p {
+    font-size: max(0.902vw, 1pt);
+    color:hsl(0, 0%, 63%);
+    line-height: 1.4;
+    font-weight: 500;
+}
+
+.shopping{
+    padding: 20px 0 50px 0;
+    transition: color 300ms;
+}
+
+.shopping img {
+    transition: transform 200ms, opacity 300ms;
+    opacity: 1;
+}
+
+.shopping span:hover {
+    color: hsl(0, 0%, 63%);
+    cursor: pointer;
+}
+
+.shopping:hover img {
+    transform: translateX(30%);
+    opacity: 0.5;
+    color: hsl(0, 0%, 63%);
+}
+
+.shopping span {
+    text-transform: uppercase;
+    font-size: max(5pt, 1vw);
+    letter-spacing: 10px;
+    font-weight: 600;
+    color: black;
+}
+
+#toggle {
+    position: absolute;
+    top: 69.1%;
+    left: 60%;
+}
+
+#toggle .arrow {
+    width: 78px;
+    height: 80px;
+    background-color: black;
+    float: left;
+    transition: background-color 200ms;
+    margin: 0;
+}
+
+
+#toggle .arrow:hover {
+    background-color: hsl(0, 0%, 27%);
+    cursor: pointer;
+}
+
+#toggle .arrow img {
+    margin: auto;
+    display: block;
+    margin-top: 27px;
+}
+
+
+
+
+

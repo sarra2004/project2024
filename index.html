@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Shop now</title>
+        <!-- css -->
+        <link rel="stylesheet" href="style.css">
+        <!-- google fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+        <!-- favicons -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
+        <link rel="manifest" href="./assets/site.webmanifest">
+
+    </head>
+    <body>
+        <!-- navigation bar -->
+        <nav>
+            <span id="logo">    
+                <img src="./assets/logo.svg" alt="logo">    
+            </span>
+            <ul>
+                <li>home</li>
+                <li>shop</li>
+                <li>about</li>
+                <li>contact</li>
+            </ul>
+        </nav>
+
+        <!-- the above part -->
+        <div>
+            <div class="above">
+                <!-- the block containing the arrows -->
+                <div class="arrows">
+                    <div id="toggle">  <!--used in js to achieve the effect of the slides-->
+                        <div class="arrow" onclick="updateinfo(-1)">
+                            <img src="./assets/icon-angle-left.svg" alt="angle-left">
+                        </div>
+                        <div class="arrow" onclick="updateinfo(1)">
+                            <img src="./assets/icon-angle-right.svg" alt="angle-right">
+                        </div>
+                    </div>
+                </div>
+                <!-- the block containing the title , text and shop now -->
+                <div class="parts">
+                    <h1></h1>
+                    <p></p>
+                    <div class="shopping"> <!--shop part-->
+                        <span>shop now</span>
+                        <img src="./assets/icon-arrow.svg" alt="arrow">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- the below part -->
+         <div id="below">
+            <div id="firstimage" style="background-image: url(./assets/image-about-dark.jpg)"></div>
+            <!-- block containing the text -->
+            <div id="content">
+                <h2>About our furniture</h2>
+                <p>
+                    Our multifunctional collection blends design and function to suit your individual taste. 
+                    Make each room unique, or pick a cohesive theme that best express your interests and what 
+                    inspires you.Find the furniture pieces you need, from traditional to contemporary styles or
+                    anything in between. Product specialists are available to help you create your dream space.
+                </p>
+            </div>
+            <div id="secondimage" style="background-image: url(./assets/image-about-light.jpg);"></div> 
+         </div>
+         <!-- js -->
+        <script src="./script.js"></script>
+    </body>
+</html>
